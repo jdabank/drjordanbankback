@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
+    'insurance',
     'appointments',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,6 +84,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'appointments',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost'
+    },
+    'insurance': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'insurance',
         'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost'

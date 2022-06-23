@@ -19,5 +19,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('', include('appointments.urls')),
+    path('', include('insurance.urls')),
     path('admin/', admin.site.urls),
 ]
